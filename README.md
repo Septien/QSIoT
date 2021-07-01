@@ -19,22 +19,22 @@ The required libraries are:
 - The Paho C MQTT library modified for use with the post-quantum cryptosystems, available [here](https:github.com/Septien/paho.mqtt.c)
 
 To compile mosquitto, change to the branch tls1_3 and run:
-´´´
+```
 cmake .
 make
 sudo make install
-´´´
+```
 
 To compiles Paho C, run:
-´´´
+```
 make
 sudo make install
-´´´
+```
 
 To compile the gateway client run:
-´´´
+```
 gcc gatewayMQTTClient.c -o test -lpaho-mqtt3cs -lpthread -lwiringPi
-´´´
+```
 
 ## Reference
 1.- Septién-Hernández J.A, Arellano-Vazquez M., Contreras-Cruz M.A., and Ramírez-Paredes J.P.I, *A Comparative Study of Post-Quantum Cryptosystems for Internet-of-Things Applications*.
